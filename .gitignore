@@ -81,3 +81,6 @@ database.database
 database.db
 diagram.png
 __pycache__/
+
+# React Component Preview
+previewConfig.json
