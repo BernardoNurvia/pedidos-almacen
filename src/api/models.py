@@ -1,6 +1,4 @@
 from flask_sqlalchemy import SQLAlchemy
-from flask_sqlalchemy_erd import draw_erd
-
 
 db = SQLAlchemy()
 
@@ -78,7 +76,3 @@ class PedidoMaterial(db.Model):
             "material_id": self.material_id,
             "cantidad": self.cantidad,
         }
-
-
-with app.app_context():
-    draw_erd(db.Model).show()
