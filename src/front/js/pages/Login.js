@@ -1,27 +1,28 @@
 import React from 'react'
 
 import logo from './../../img/logo.png'
-
+import background from './../../img/background.png'
 
 
 const Login = () => {
   return (
-    <div className='container'>
-        <div className='text-center m-auto'style={{width:"20rem", backgroundColor:"purple", borderRadius:"5px"}} >
+    <div className='container p-3'>
+        <div className='text-center m-auto p-3'style={{width:"20rem", backgroundImage:"url(https://res.cloudinary.com/dikso8bsk/image/upload/v1730039919/Iniciar_qnoeta.png)",    backgroundSize: 'cover',
+    backgroundPosition: 'center', borderRadius:"5px"}} >
             <h1 className=''>Solicitud de Material</h1>
-            <img src={logo} style={{width:"10rem"}} alt="1KOMMA5º" />
+            <img src={logo} style={{width:"10rem", borderRadius:"8px"}} alt="1KOMMA5º" />
             <br/>
-            <h2 className='mt-1'>Usuario</h2>
+            <h2 className='mt-1' >Usuario</h2>
            
-            <input type="email" />
+            <input className="form-control" placeholder='Tu email aqui' type="email" />
             
             <h2 className='mt-1'>Contraseña</h2>
             
-            <input type="password" />
+            <input className="form-control" placeholder="contraseña" type="password" />
             <br/>
             <button className='btn btn-success mt-1'>Login</button>
             <br/>
-            <h5 className='mt-1'>Registrate<a href="">Aqui</a></h5>
+            <h5 className='mt-3'>Registrate<a href="">Aqui</a></h5>
         </div>
 
     </div>
