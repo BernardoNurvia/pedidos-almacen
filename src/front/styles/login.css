@@ -1,0 +1,8 @@
+.text-border-white-blur {
+    color: black; /* Color del texto */
+    text-shadow: 
+        1px 1px 2px white, 
+        -1px 1px 2px white, 
+        1px -1px 2px white, 
+        -1px -1px 2px white;
+}
