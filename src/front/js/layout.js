@@ -12,6 +12,7 @@ import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import Login from "./pages/Login";
 import Registro from "./pages/Registro.jsx";
+import DashboardConsumer from "./pages/DashboardConsumer.jsx";
 
 
 
@@ -34,7 +35,7 @@ const Layout = () => {
                         <Route element={<Login />} path="/login" />
                         <Route element={<Home />} path="/" />
                         <Route element={<Registro />} path="/registro" />
-                        <Route element={<Single />} path="/single/:theid" />
+                        <Route element={<DashboardConsumer />} path="/dashboard-consumer" />
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
                     <Footer />
