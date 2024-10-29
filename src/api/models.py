@@ -22,6 +22,7 @@ class User(db.Model):
 
 class Material(db.Model):
     id = db.Column(db.Integer, primary_key=True)
+    type = db.Column(db.String(100), nullable=False)
     name = db.Column(db.String(100), unique=True, nullable=False)
     stock = db.Column(db.Boolean, unique=False, nullable=False)
 
@@ -31,6 +32,7 @@ class Material(db.Model):
     def serialize(self):
         return {
             "id": self.id,
+            "type": self.type, 
             "name": self.name,
             "stock": self.stock,
         }

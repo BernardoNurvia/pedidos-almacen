@@ -4,8 +4,6 @@ import ScrollToTop from "./component/scrollToTop";
 import { BackendURL } from "./component/backendURL";
 
 import { Home } from "./pages/home";
-import { Demo } from "./pages/demo";
-import { Single } from "./pages/single";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
@@ -13,6 +11,9 @@ import { Footer } from "./component/footer";
 import Login from "./pages/Login";
 import Registro from "./pages/Registro.jsx";
 import DashboardConsumer from "./pages/DashboardConsumer.jsx";
+import UpdateConsumer from "./pages/UpdateConsumer.jsx";
+import DashboardProvider from "./pages/DashboardProvider.jsx";
+import Pedido from "./pages/Pedido.jsx";
 
 
 
@@ -36,6 +37,9 @@ const Layout = () => {
                         <Route element={<Home />} path="/" />
                         <Route element={<Registro />} path="/registro" />
                         <Route element={<DashboardConsumer />} path="/dashboard-consumer" />
+                        <Route element={<DashboardProvider />} path="/dashboard-provider" />
+                        <Route element={<UpdateConsumer />} path="/update-consumer" />
+                        <Route element={<Pedido/>} path="/pedido" />
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
                     <Footer />
